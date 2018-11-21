@@ -113,7 +113,7 @@ ul{
 
 .lt_main{
     height: 2000px;
-    background: pink;
+    /*background: pink;*/
     padding-left:  180px;
     padding-top: 50px;
     transition: padding-left 1s;
@@ -156,4 +156,12 @@ ul{
 .modal-body i,
 .modal-body span{
     color: #A94442;
+}
+
+.lt_content .echarts_left,
+.lt_content .echarts_right{
+    width: 48%;
+    height: 400px;
+    /*background-color: skyblue;*/
+
 }
