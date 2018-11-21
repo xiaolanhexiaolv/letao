@@ -26,10 +26,44 @@ $(document).ajaxStop(function(){
       NProgress.done();  
     },500)
    
+});
 
+// 公用的功能
+// 左侧二级切换菜单
+$('#category').click(function(){
+    $(this).next().stop().slideToggle();
+});
+
+// 左侧菜单栏切换
+
+$('.icon_left').click(function(){
+    $('.lt_aside').toggleClass("hidemenu");
+    $('.lt_topbar').toggleClass("hidemenu");
+    $('.lt_main').toggleClass("hidemenu");
+});
+
+// 3、公共退出功能
+
+$('.icon_right').click(function(){
+    $('#myModal').modal('show');
+
+});
+
+$('#logoutBtn').click(function(){
+   $.ajax({
+       type:'get',
+       url: '/employee/employeeLogout',
+       datatype:'json',
+       success: function(info){
+        //    console.log(info);
+        if(info.success){
+            location.href ="login.html";
+        }
+
+       }
+
+   })
 
 })
-
-
 
 })

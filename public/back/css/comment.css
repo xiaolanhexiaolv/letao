@@ -39,6 +39,11 @@ ul{
     height: 100%;
     background: #222D32;
     z-index: 999;
+    transition: left 1s;
+}
+
+.lt_aside.hidemenu{
+    left: -180px;
 }
 
 .lt_aside .brand{
@@ -111,6 +116,11 @@ ul{
     background: pink;
     padding-left:  180px;
     padding-top: 50px;
+    transition: padding-left 1s;
+}
+
+.lt_main.hidemenu{
+    padding-left: 0
 }
 
 .lt_main .lt_topbar{
@@ -121,6 +131,11 @@ ul{
     top: 0;
     background-color: #3C8DBc;
     padding-left: 180px;
+    transition: padding-left 1s;
+}
+
+.lt_topbar.hidemenu{
+    padding-left: 0;
 }
 
 .lt_topbar .icon_left,
@@ -136,4 +151,9 @@ ul{
 
 .container-fluid .mt_20{
     margin-top: 20px;
+}
+
+.modal-body i,
+.modal-body span{
+    color: #A94442;
 }
