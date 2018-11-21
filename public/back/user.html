@@ -22,7 +22,7 @@
          </div>
          <div class="nav">
              <ul>
-                 <li><a href="user.html">
+                 <li><a href="user.html" class="current">
                      <i class="glyphicon glyphicon-user"></i>
                      <span>用户管理</span>
                  
@@ -36,7 +36,7 @@
                  <a href="second.html">二级分类</a>
                  </div>
                  </li>
-                 <li><a href="product.html">
+                 <li><a href="#">
                      <i class="glyphicon glyphicon-tags"></i>
                      <span>商品管理</span>
                  
@@ -57,14 +57,46 @@
        <div class="container-fluid">
         <ol class="breadcrumb mt_20">
         <li><a href="index.html">管理系统</a></li>
-        <li class="active">首页</li>
+        <li class="active">用户管理</li>
         </ol>
-        <!--两个图表-->
-        <div class="lt_content">
-            <div class="echarts_left pull-left"></div>
-            <div class="echarts_right pull-right"></div>
-        </div>
         
+        <div class="lt_content">
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <tr>
+                    <th>序号</th>
+                    <th>用户名</th>
+                    <th>手机号</th>
+                    <th>状态</th>
+                    <th>操作</th>
+                    </tr>  
+                </thead>
+                <tbody>
+                 <tr> 
+                    <td>1</td>
+                    <td>itcast</td>
+                    <td>15757771111</td>
+                    <td>正常</td>
+                    <td><button class="btn btn-danger">禁用</button></td>
+                 </tr>
+                 <tr> 
+                    <td>1</td>
+                    <td>itcast</td>
+                    <td>15757771111</td>
+                    <td>正常</td>
+                    <td><button class="btn btn-danger">禁用</button></td>
+                 </tr>
+                 <tr> 
+                    <td>1</td>
+                    <td>itcast</td>
+                    <td>15757771111</td>
+                    <td>正常</td>
+                    <td><button class="btn btn-danger">禁用</button></td>
+                 </tr>
+                </tbody>
+            </table>
+
+        </div>
        </div>
     </div>
 <!--退出模态框-->
@@ -92,10 +124,9 @@
     <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
     <script src="./lib/bootstrap-validator/js/bootstrapValidator.min.js"></script>
     <script src="./lib/nprogress/nprogress.js"></script>
-    <script src="./lib/echarts/echarts.min.js"></script>
     <script src="./js/islogin.js"></script>
     <script src="./js/common.js"></script>
-    <script src="./js/index.js"></script>
+    
    
     <script>
 
