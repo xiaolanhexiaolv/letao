@@ -132,6 +132,7 @@ ul{
     background-color: #3C8DBc;
     padding-left: 180px;
     transition: padding-left 1s;
+    z-index: 998;
 }
 
 .lt_topbar.hidemenu{
