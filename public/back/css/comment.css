@@ -172,3 +172,8 @@ ul{
     /*background-color: skyblue;*/
 
 }
+
+/*分页插件右浮动*/
+.pagination{
+    float: right;
+}
